@@ -1,0 +1,155 @@
+html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing:inherit;}
+
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    background-color: #6BA099;
+    color: #41817F;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 100;
+    color: rgba(175, 47, 47, .15);
+    text-align: center;
+}
+
+form {
+    box-shadow: 4px 5px #686868;
+    background: white;
+    border-bottom: 1px solid grey;
+}
+
+.input {
+    background: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px, solid, grey;  /*didn't work. not sure why*/
+}
+
+.input i {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.input input {
+    flex-grow:1;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 300px;
+
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+.container > footer {
+    text-align: center;
+    color: #ccc;
+    margin-top: 50px;
+}
+
+.items {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.items li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 25px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+label {
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+.items li label {
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+/*.items input[type=checkbox]:checked ~ .replace i {
+    display: inline;
+}
+
+.replace {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #D8D8D8; /* THE BORDER AND BORDER-RADIUS GAVE YOU THE EXTRA BOX */
+    /*border-radius: 50%;
+}
+
+/*.replace i {
+    display: none;
+} */
+
+
+.items input [type=checkbox] {
+    margin: 0 20px;
+} 
+
+
+.items li button {
+    background: transparent;
+    color: rgba(175, 47, 47, .15);
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: lowercase;
+    font-size: 15px;
+}
+
+
+
+form > footer {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+form > footer> p {
+    padding-left: 20px;
+    font-size: 15px;
+    color: #D8D8D8;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+
+
+}
+
+form > footer button {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    color: #D8D8D8;
+    font-size: 15px;
+    font-weight: inherit;
+    margin-bottom: 20px;
+
+}
+
+form > footer button {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+form > footer button.active {
+    border: 1px solid rgba(175, 47, 47, .15);
+    border-radius: 3px;
+}
